@@ -1,5 +1,6 @@
 package it.polito.tdp.ruzzle;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
@@ -117,7 +118,7 @@ public class FXMLController {
     }
 
     @FXML
-    void handleReset(ActionEvent event) {
+    void handleReset(ActionEvent event) throws FileNotFoundException {
     	model.reset();
     }
     
